@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="folha.css">
+  <link rel="shortcut icon" href="favicon.ico" >
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="script.js"></script>
+  <title>De Mala e Cuia</title>
+</head>
+
+<body>
+
+  <div class="logo">
+    <object type="image/svg+xml" data="logo.svg"></object>
+  </div>
+
+  <div class="Background">
+    <li><img src="imagens/imagem01.jpg" alt="img01"></li>
+  </div>
+
+
+  <div class="back">
+    <a href="index.html">
+      <input type="submit" value="voltar" id="voltar">
+    </a>
+  </div>
+  <div class="linha"></div>
+  <div class="box1"></div>
+  <div class="cadastro">
+    <br>
+    <form>
+      <legend> Cadastro </legend>
+      <br>
+      <span><b>nome</b><br>
+     <input class="nome" type="text" id="Nome" required="required" placeholder="Primeiro nome" pattern="[a-zA-Z]+$"><br>
+    <span><b>sobrenome</b><br>
+     <input class="sobreNome" type="text" id="Sobrenome" required="required" placeholder="Digite seu sobrenome" pattern="[a-zA-Z]+$"><br>
+    <span><b>email</b><br> 
+      <input class="email" type="email" id="Email" required="required" placeholder="Digite seu senha email"><br>
+    <span><b>senha:</b><br>
+      <input class="senha" type="password" id="Senha" required="required" placeholder="Digite sua senha"><br>
+    <span><b>confirmar senha</b>
+     <input class="confiSenha" type="password" id="Senha2" required="required" placeholder="Digite sua senha novamente"><br></br>
+    <input  class="termo" type="checkbox" value="1" required="required">Você concorda com os termos de licença de uso?
+    <br><br>
+    <input type="submit" value="Confirmar" id="confirmar" onClick="validarCadastro();">
+    <input type="reset" value="Limpar" id="limpar">
+    <a href="index.html"><input type="button" value="Cancelar" id="cancelar"> </a>
+  </form>
+</div>
+
+<footer>
+2015 - Projeto Final - Desenvolvimento WEB - SENAI CIMATEC.
+</footer>
+</body>
+</html>
